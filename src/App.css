@@ -1,38 +1,87 @@
-.App {
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #007bff;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 25px;
+  font-size: 1em;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button {
+  padding: 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.weather-display {
+  background: #f1f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-display h2 {
+  margin: 10px 0;
+  color: #007bff;
+  font-size: 1.5em;
+}
+
+.weather-display p {
+  margin: 5px 0;
+  color: #333333;
+  font-size: 1.1em;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  input, button {
+    font-size: 1em;
+    padding: 10px;
   }
 }
